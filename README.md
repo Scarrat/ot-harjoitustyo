@@ -1,12 +1,12 @@
-##### Ohjelmistotekniikan harjoitustyö
+## Ohjelmistotekniikan harjoitustyö
 
-on se *git* kyllä **jännä** juttu
-
-
-[gitlog.txt](https://github.com/Scarrat/ot-harjoitustyo/blob/main/laskarit/gitlog.txt)
-
-[komentorivi.txt](https://github.com/Scarrat/ot-harjoitustyo/blob/main/laskarit/komentorivi.txt)
+### Luolastopeli
+Ohjelmasta on tarkoitus tulla luolastopeli, jossa mennään luolassa tutkimassa huoneita johonkin loppuun asti/loputtomasti.
 
 
-jotain
-lisää
+### Dokumentaatio
+[Määrittelydokumentti](https://github.com/Scarrat/ot-harjoitustyo/blob/main/dokumentaatio/maarittelydokumentti.txt)
+
+
+
+
