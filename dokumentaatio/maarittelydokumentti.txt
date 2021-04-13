@@ -1,0 +1,21 @@
+<h1> Määrittelydokumentti<h1>
+
+<h2>Sovelluksen tarkoitus<h2>
+
+Kyseessä jonkinnäköinen luolastoseikkailupeli. Luolassa on "huoneita" joita pitkin edetään pelissä eteenpäin.
+
+<h2>Perusversion toiminnallisuudet<h2>
+Pelimekaniikat: 
+	-Sokkelomaisessa luolassa kulkeminen
+	-Esteet
+	-Elämät
+
+Käyttöliittymä:
+	-Kartta
+
+
+<h2>Jatkokehitysideat<h2>
+	-Taistelujärjestelmä?
+	-Pelaajien kommentit?
+	-Oman luolan rakennus?
+	-
