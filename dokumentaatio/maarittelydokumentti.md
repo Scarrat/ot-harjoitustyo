@@ -12,7 +12,7 @@ Pelimekaniikat:
 
 Käyttöliittymä:
 * Kartta
-* Napit liikkumiseen
+* Relevantti tieto
 
 ****Jatkokehitysideat****
 * Taistelujärjestelmä?
