@@ -6,7 +6,7 @@ Kyseessä jonkinnäköinen luolastoseikkailupeli. Luolassa on "huoneita" joita p
 
 ****Perusversion toiminnallisuudet****
 Pelimekaniikat: 
-* luolassa kulkeminen
+* Luolassa kulkeminen
 * Ansat
 * Elämät
 
