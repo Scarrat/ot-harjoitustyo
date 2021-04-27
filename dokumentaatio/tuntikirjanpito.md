@@ -9,7 +9,7 @@
 | 19.4 | 4 | UI luomisyritys, huomasin etten muista javafx:stä mitään. Opettelen uudestaan.
 | 20.4 | 2 | Parin kuvakkeen luominen. UI alotus. Etenee hitaasti muiden töiden vuoksi :<
 | 25.4 | 2 | Peliruutu kasassa. JavaFX jostain syystä lakkasi taas toimimasta.
-| 27.4 | 6 | Liikkuminen toimii. Huonejärjestely kasassa. Koodi sotkussa :D
+| 27.4 | 6 | Liikkuminen toimii. Huonejärjestely kasassa. Koodi sotkussa :D. Jar tiedosto ei suostu toimimaan.
 
 YHT: 20 Tuntia    
 
