@@ -17,4 +17,4 @@ Käyttöliittymä:
 ****Jatkokehitysideat****
 * Taistelujärjestelmä?
 * Pelaajan vaikutus?
-* mitä nyt keksisi.
+* mitä nyt keksii/pystyy/ehtii tekemään
