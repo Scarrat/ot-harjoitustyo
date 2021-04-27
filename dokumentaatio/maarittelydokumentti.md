@@ -16,5 +16,5 @@ Käyttöliittymä:
 
 ****Jatkokehitysideat****
 * Taistelujärjestelmä?
-* Pelaajien kommentit?
+* Pelaajan vaikutus?
 * mitä nyt keksisi.
