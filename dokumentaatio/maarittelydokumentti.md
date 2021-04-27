@@ -14,7 +14,7 @@ Käyttöliittymä:
 	-Kartta
 	-Napit liikkumiseen
 
-<h2>Jatkokehitysideat<h2>
+****Jatkokehitysideat****
 	-Taistelujärjestelmä?
 	-Pelaajien kommentit?
 	-mitä nyt keksisi.
