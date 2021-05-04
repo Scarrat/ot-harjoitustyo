@@ -1,32 +1,33 @@
 package dg;
 
-/**
- *
- * @author kostajoo
- */
 import java.util.*;
 
 public class Dungeon {
 
     private int xcoord;
     private int ycoord;
-    private Player player;
+    private boolean oneExit;
 
     private Room[][] rooms;
+    private Room[][] backUp;
 
     public Dungeon() {
         this.rooms = new Room[5][5];
         this.xcoord = 2;
         this.ycoord = 4;
-        this.player = new Player();
         Random r = new Random();
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
                 if (i == 4 && j == 2) {
                     rooms[i][j] = new Room(j, i, 0);
                     rooms[i][j].step();
-                } else {
+                } else if (!oneExit) {
                     rooms[i][j] = new Room(j, i, r.nextInt(5) + 1);
+                    if (rooms[i][j].getType() == "exit") {
+                        oneExit = true;
+                    }
+                } else {
+                    rooms[i][j] = new Room(j, i, r.nextInt(5));
                 }
             }
         }
@@ -45,7 +46,7 @@ public class Dungeon {
         return this.ycoord;
     }
 
-    public void move(int way) {
+    public int move(int way) {
         rooms[ycoord][xcoord].leave();
         if (way == 1) {
             if (ycoord - 1 > -1) {
@@ -69,21 +70,48 @@ public class Dungeon {
         }
         rooms[ycoord][xcoord].step();
         String type = rooms[ycoord][xcoord].getType();
+        if (type.equals("empty")) {
+            System.out.println("Nothing here");
+            return 0;
+        }
         if (type.equals("trap")) {
-            player.healthDown(1);
+            System.out.println("Oof");
+            return -1;
         }
         if (type.equals("bigtrap")) {
-            player.healthDown(3);
+            System.out.println("OOF");
+            return -3;
         }
         if (type.equals("potion")) {
-            player.healthUp(1);
+            System.out.println("Heal");
+            return +1;
         }
         if (type.equals("bigpotion")) {
-            player.healthUp(3);
+            System.out.println("HEAL");
+            return +3;
         }
         if (type.equals("exit")) {
             System.out.println("You won");
+            return 5;
         }
+        return 0;
+
+    }
+
+    public void reset() {
+        Room[][] backUp = new Room[5][5];
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                backUp[i][j] = new Room(j, i, rooms[i][j].getTypeNum());
+            }
+        }
+
+        rooms = backUp;
+        int oldx = xcoord;
+        int oldy = ycoord;
+        this.xcoord = 2;
+        this.ycoord = 4;
+        rooms[4][2].step();
 
     }
 
