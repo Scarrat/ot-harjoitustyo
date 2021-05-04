@@ -3,10 +3,6 @@ package dg;
 
 import javafx.scene.image.Image;
 
-/**
- *
- * @author kostajoo
- */
 public class Room {
 
     private int x;
