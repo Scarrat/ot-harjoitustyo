@@ -1,12 +1,12 @@
 
 package ui;
 
-
 import dg.Dungeon;
 import dg.Player;
 import dg.Room;
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import javafx.scene.image.ImageView;
@@ -29,6 +29,7 @@ public class UI extends Application {
     int curroom = 0;
     Label vicLabel = new Label("You won");
     Font font1 = new Font("SansSerif", 128);
+    Stage backUp;
 
     GridPane gridPane = new GridPane();
 
@@ -97,7 +98,6 @@ public class UI extends Application {
         gridPane.add(label1, 0, 0);
         gridPane.add(label2, 1, 0);
         if (curroom == 5) {
-            System.out.println("WTF");
             victory();
         }
     }
@@ -114,6 +114,10 @@ public class UI extends Application {
         vicLabel.setFont(font1);
         bp.setPrefSize(640, 640);
         bp.setCenter(vicLabel);
+        /*
+         * Button button = new Button(("Restart")); bp.setBottom(button);
+         * button.setOnAction((event) -> { this.stage.setScene(new Scene(gridPane)); });
+         */
 
         this.stage.setScene(new Scene(bp));
     }
